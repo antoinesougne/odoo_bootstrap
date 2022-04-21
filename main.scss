@@ -1,0 +1,31 @@
+// TO CHECK
+// Loader
+////////Theming
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+$container-max-widths: (
+  sm: 600px
+);
+$border-radius: 0;
+$grid-gutter-width : 0;
+
+//List
+$list-group-item-padding-x : 0;
+
+
+
+//Cards
+$card-cap-bg: #343a40;
+$card-cap-color: #fff;
+$card-cap-padding-x: 1.25rem;
+
+//Nav
+$nav-link-padding-x: 1.25rem;
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+////////Custom
