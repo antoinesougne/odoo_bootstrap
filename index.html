@@ -13,37 +13,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header bg-900">
-                        <!-- I did not find a way to change nav-link's background color -->
-                        <ul class="nav nav-tabs card-header-tabs" id="nav-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="nav-tab-one" data-bs-toggle="tab"
-                                    data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one"
-                                    aria-selected="true">
-                                    Tab 1
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two"
-                                    type="button" role="tab" aria-controls="tab-two" aria-selected="false">
-                                    Tab 2
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three"
-                                    type="button" role="tab" aria-controls="tab-three" aria-selected="false">
-                                    Tab 3
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" id="nav-disabled" disabled>
-                                    Disabled
-                                </a>
-                            </li>
-                        </ul>
+                <div class="card mt-3 border-0">
+                    <div class="card-header px-4 py-0 border bg-dark">
+                        <nav class="navbar navbar-dark bg-dark d-flex justify-content-between">
+                            <a href="#">
+                                <img class="img-fluid" width="18px"
+                                    src="http://www.clker.com/cliparts/i/s/H/f/4/T/apple-logo-white.svg" alt="">
+                            </a>
+                            <ul class="navbar-nav nav flex-row" id="nav-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active ms-3" id="nav-tab-one" data-bs-toggle="tab"
+                                        data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one"
+                                        aria-selected="true">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ms-3" id="nav-tab-two" data-bs-toggle="tab"
+                                        data-bs-target="#tab-two" type="button" role="tab" aria-controls="tab-two"
+                                        aria-selected="false">
+                                        Shops
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ms-3" id="nav-tab-three" data-bs-toggle="tab"
+                                        data-bs-target="#tab-three" type="button" role="tab" aria-controls="tab-three"
+                                        aria-selected="false">
+                                        My profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="card-body p-0">
+                    <div class="card-body border-start border-end p-4">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="tab-content" id="nav-tabContent">
@@ -51,54 +53,44 @@
                                         aria-labelledby="nav-tab-one">
                                         <div class="col-md-12">
                                             <div class="row">
-                                                <div class="col-md-12 p-3">
-                                                    <h5 class="card-title">Card title</h5>
+                                                <div class="col-md-12 px-0 py-3">
+                                                    <h5 class="card-title">iPhone 13 Pro Max</h5>
                                                     <h6 class="card-subtitle mb-2 text-muted">
-                                                        Card subtitle
+                                                        Apple Inc.
                                                     </h6>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <ul class="nav flex-column nav-items col-12 col-md-6 p-0" id="tabItems"
-                                                    role="tablist">
-                                                    <li class="border-start-0 border-end-0 list-group-item"
-                                                        role="presentation">
-                                                        <a class="nav-link" id="first-item-tab"
-                                                            data-bs-target="#first-item" data-bs-toggle="tab"
-                                                            type="button" role="tab">
-                                                            Item 1
-                                                        </a>
-                                                    </li>
-                                                    <li class="border-start-0 border-end-0 list-group-item"
-                                                        role="presentation">
-                                                        <a class="nav-link" id="second-item-tab"
-                                                            data-bs-target="#second-item" data-bs-toggle="tab"
-                                                            type="button" role="tab">
-                                                            Item 2
-                                                        </a>
-                                                    </li>
-                                                    <li class="border-start-0 border-end-0 list-group-item"
-                                                        role="presentation">
-                                                        <a class="nav-link" id="third-item-tab"
-                                                            data-bs-target="#third-item" data-bs-toggle="tab"
-                                                            type="button" role="tab">
-                                                            Item 3
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                                <div class="tab-content col-12 col-md-6 p-0" id="tabItemsContent">
+                                                <div class="nav flex-column nav-pills col-12 col-md-4 pt-2"
+                                                    id="tabItems" role="tablist">
+                                                    <a class="nav-link active" id="first-item-tab"
+                                                        data-bs-target="#first-item" data-bs-toggle="tab" type="button"
+                                                        role="tab">
+                                                        Overview
+                                                    </a>
+                                                    <a class="nav-link" id="second-item-tab"
+                                                        data-bs-target="#second-item" data-bs-toggle="tab" type="button"
+                                                        role="tab">
+                                                        Camera
+                                                    </a>
+                                                    <a class="nav-link" id="third-item-tab" data-bs-target="#third-item"
+                                                        data-bs-toggle="tab" type="button" role="tab">
+                                                        Side
+                                                    </a>
+                                                </div>
+                                                <div class="tab-content col-12 col-md-8 p-0" id="tabItemsContent">
                                                     <div class="tab-pane fade show active" id="first-item"
                                                         role="tabpanel">
-                                                        <img class="img-fluid w-100"
-                                                            src="https://via.placeholder.com/299x172/0000FF/000000" />
+                                                        <img class="rounded-3 img-fluid w-100"
+                                                            src="https://static.fnac-static.com/multimedia/Images/FR/MDM/9c/12/04/17044124/1520-2/tsp20220404192611/Apple-iPhone-13-Pro-Max-6-7-5G-256-Go-Double-SIM-Graphite.jpg" />
                                                     </div>
                                                     <div class="tab-pane fade" id="second-item" role="tabpanel">
-                                                        <img class="img-fluid w-100"
-                                                            src="https://via.placeholder.com/299x172/00FF00/000000" />
+                                                        <img class="rounded-3 img-fluid w-100"
+                                                            src="https://static.fnac-static.com/multimedia/Images/FR/MDM/9c/12/04/17044124/1520-3/tsp20220404192611/Apple-iPhone-13-Pro-Max-6-7-5G-256-Go-Double-SIM-Graphite.jpg" />
                                                     </div>
                                                     <div class="tab-pane fade" id="third-item" role="tabpanel">
-                                                        <img class="img-fluid w-100"
-                                                            src="https://via.placeholder.com/299x172/FF0000/000000" />
+                                                        <img class="rounded-3 img-fluid w-100"
+                                                            src="https://static.fnac-static.com/multimedia/Images/FR/MDM/9c/12/04/17044124/1520-4/tsp20220404192611/Apple-iPhone-13-Pro-Max-6-7-5G-256-Go-Double-SIM-Graphite.jpg" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,8 +136,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer">
-                        <span>2 days ago</span>
+                    <div class="card-footer border">
+                        <span class="fs-6">2 days ago</span>
                     </div>
                 </div>
             </div>
