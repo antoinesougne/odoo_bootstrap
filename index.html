@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="main.css" />
     <title>Boostrap Odoo</title>
 </head>
@@ -42,6 +41,17 @@
                                         aria-selected="false">
                                         My profile
                                     </a>
+                                </li>
+                                <li class="nav-item">
+                                    <span lass="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Tooltip on bottom">
+                                        <a class="nav-link ms-3 disabled" id="nav-tab-three" data-bs-toggle="tab"
+                                            data-bs-target="#tab-three" type="button" role="tab"
+                                            aria-controls="tab-three" aria-selected="false">
+                                            Disabled
+                                        </a>
+                                    </span>
+
                                 </li>
                             </ul>
                         </nav>
@@ -141,8 +151,48 @@
                         <span class="fs-6">2 days ago</span>
                     </div>
                 </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">UX Report</h5>
+                        <p class="card-text">First of all, doing such an exercise is quite difficult without any
+                            context. There are a multitude of potential users having radically different needs and
+                            problems. Design decisions can be radically different from one user persona to another.</p>
+                        <p class="card-text">
+                            The best I can do here is to judge if yes or not the design follows common best practices
+                            and usability rules. Some of my observations are :
+                        </p>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    The component lacks feedback toward the user. For example, there is no tooltip explaining why
+                            the tab is disable. Also, there is no progress visible on the loader.
+                                </li>
+                                <li>
+                                    There is a lot to say about the item tabs:
+                                    <ul>
+                                        <li>
+                                            It takes a way too big place on the screen
+                                        </li>
+                                        <li>
+                                            There is no indicator telling the user where he is
+                                        </li>
+                                        <li>
+                                            It looks more like a simple list than a clickable element. There is a basic color applied to all
+                            the items when it should be an action color for more affordance
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    The color used for the footer makes it stands out too much compared to the main content
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
